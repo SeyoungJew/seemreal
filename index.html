@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>수업 교안</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Seem' 동사 활용: 대화형 수업 지도안</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-teal-800">중3 영어 'Seem' 동사 활용</h1>
+            <p class="text-slate-600 mt-2">파인만 기법을 활용한 3차시 대화형 수업 지도안</p>
+        </header>
+
+        <div id="overview" class="mb-10 bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-semibold text-teal-700 mb-4 flex items-center">
+                <span class="mr-2">📎</span> 수업 개요
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-bold text-slate-700 mb-2">🎯 교수 학습 목표</h3>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1">
+                        <li>'seem' 동사의 기본적인 의미와 용법을 이해한다.</li>
+                        <li>다양한 'seem' 구문을 활용하여 문장을 만들 수 있다.</li>
+                        <li>'seem'을 사용하여 다양한 상황을 묘사하고 감정을 표현한다.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-700 mb-2">🛠️ 준비물</h3>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1">
+                        <li>PPT, 활동지, 그림 카드</li>
+                        <li>화이트보드 마커, 포스트잇</li>
+                        <li>학생용 스마트 기기 (선택)</li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                     <h3 class="font-bold text-slate-700 mb-2">💡 핵심 교수법: 파인만 기법</h3>
+                     <p class="text-slate-600">복잡한 개념을 어린아이에게 설명하듯 쉽게 풀어내는 학습법입니다. 학생들은 '배운 후, 스스로 설명해보고, 막히는 부분을 다시 학습'하는 과정을 통해 문법 개념을 깊이 있게 내재화합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="flex justify-center border-b-2 border-slate-200 mb-8">
+            <button class="nav-button active text-lg py-3 px-6" onclick="showContent('session1')">1차시</button>
+            <button class="nav-button text-lg py-3 px-6" onclick="showContent('session2')">2차시</button>
+            <button class="nav-button text-lg py-3 px-6" onclick="showContent('session3')">3차시</button>
+        </nav>
+
+        <main>
+            <section id="session1" class="content-section active">
+                <div class="grid lg:grid-cols-5 gap-8">
+                    <div class="lg:col-span-3">
+                        <h2 class="text-2xl font-bold text-teal-700 mb-1">'Seem'의 첫인상</h2>
+                        <p class="text-slate-500 mb-6">기본 의미 및 'seem + 형용사' 구문 학습</p>
+                        <div id="accordion1" class="space-y-3"></div>
+                    </div>
+                    <div class="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 self-start">
+                        <h3 class="text-lg font-semibold text-center mb-4">⏱️ 1차시 시간 배분 (45분)</h3>
+                        <div class="chart-container">
+                            <canvas id="chart1"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="session2" class="content-section">
+                 <div class="grid lg:grid-cols-5 gap-8">
+                    <div class="lg:col-span-3">
+                        <h2 class="text-2xl font-bold text-teal-700 mb-1">'Seem to be'는 뭘까?</h2>
+                        <p class="text-slate-500 mb-6">'seem to be + 형용사' 구문 활용</p>
+                        <div id="accordion2" class="space-y-3"></div>
+                    </div>
+                    <div class="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 self-start">
+                        <h3 class="text-lg font-semibold text-center mb-4">⏱️ 2차시 시간 배분 (45분)</h3>
+                        <div class="chart-container">
+                            <canvas id="chart2"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="session3" class="content-section">
+                <div class="grid lg:grid-cols-5 gap-8">
+                    <div class="lg:col-span-3">
+                        <h2 class="text-2xl font-bold text-teal-700 mb-1">'It seems that~'의 마법</h2>
+                        <p class="text-slate-500 mb-6">'It seems that~' 구문 활용 및 총정리</p>
+                        <div id="accordion3" class="space-y-3"></div>
+                    </div>
+                    <div class="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 self-start">
+                        <h3 class="text-lg font-semibold text-center mb-4">⏱️ 3차시 시간 배분 (45분)</h3>
+                        <div class="chart-container">
+                            <canvas id="chart3"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
